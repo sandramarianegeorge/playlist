@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PlayList- Custom Playlist</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width,, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="background-img-generic">
+  <nav class="navbar navbar-expand-lg" >
+    <!-- Brand/logo -->
+    <a class="navbar-brand font-color-black" href="#" >PlayList</a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto" >
+      <li class="nav-item">
+        <a class="nav-link font-color-black" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-color-black" href="charts.html" >Charts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-color-black" href="country.html" >Country</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-color-black" href="pop.html" >Pop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active font-color-black" href="custom.html">Custom</a>
+      </li>
+    </ul>
+  </nav>
+  <br>
+
+  <div class="container center-align-text">
+        <h1>Your Custom Playlist</h1>
+        <p>Collection of your custom playlists | <span><a href="#addNewPlaylistModal" data-target="#addNewPlaylistModal" data-toggle="modal" class="font-color-black">Add New Playlist</a></span></p>
+      </div>
+      <br>
+
+      <div class="container" >
+        <h3 >Your Collections</h3>
+       
+      </div>
+      <br>
+
+      <div id="demo" class="carousel slide" data-ride="carousel" >
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <!--
+            <div class="container" style="background-color: black;">
+              <div  style="width:100%; max-height: 400px;height: 400px; ">
+                <img class="card-img-top" src="assets/img/taylorSwift.jpg" alt="Card image"  style="max-height: 300px;max-width: 300px; margin-top: 30px;margin-bottom: 5px; float: right;">
+              </div>
+            -->
+                          
+                   
+                    <div class="container custom-playlist-card-carousel-container" >
+                      <div class="custom-playlist-card-carousel-flex-box">
+                       <!-- <div  style="width:100%; max-height: 400px;height: 400px; "> -->
+
+                         <div class="custom-playlist-card-carousel-margin-right">
+                          <div class="custom-playlist-card-carousel-info" >
+                            
+                              <h2><span>PlayList Information</span> </h2>
+                              <br>
+                              <table class="table-borderless custom-playlist-card-carousel-table" >
+                                <tr>
+                                  <td >PlayList Name: </td>
+                                  <td>Playlist 1</td>
+                                </tr>
+                                <tr>
+                                  <td>Song Count: </td>
+                                  <td>20</td>
+                                </tr>
+                                <tr>
+                                  <td>Artist: </td>
+                                  <td>Taylor Swift</td>
+                                </tr>
+                                <tr>
+                                  <td>Genre: </td>
+                                  <td>Pop</td>
+                                </tr>
+                                <tr>
+                                  <td>More Info: </td>
+                                  <td><a href="#sampleModal" data-toggle="modal" data-target="#sampleModal" class="font-color-white">View</a></td>
+                                </tr>
+
+                                <tr>
+                                  <td>Add a Song: </td>
+                                  <td><a href="#addModal" data-toggle="modal" data-target="#addModal" class="font-color-white">Add</a></td>
+                                </tr>
+                            </table>
+                          
+                          </div>
+                          
+                           
+                         </div>
+
+
+                         <div class="custom-playlist-card-carousel-margin-right">
+                          <img class="card-img-top custom-playlist-card-carousel-image" src="assets/img/taylorSwift.jpg" alt="Card image">
+
+                         </div>
+                        </div>
+
+
+                        
+                      
+                      
+                    </div>
+
+                
+                   
+                 
+                  </div>
+            </div>  
+
+          </div>
+     
+
+        </div>
+        <!--
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      -->      
+
+
+        <div class="modal fade" id="sampleModal" tabindex="-1" role="dialog" aria-labelledby="sampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="sampleModalLabel">List of Songs in PlayList 1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>SNo</th>
+                      <th>Name</th>
+                      <th>Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>I forgot that you existed</td>
+                      <td>2:51</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Cruel summer</td>
+                      <td>2:59</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Lover</td>
+                      <td>3:41</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addModalLabel">Add a new song</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+
+                  <table class="table table-striped">
+                    <tr>
+                      <td>Song Name</td>
+                      <td>
+                        <div class="form-group">
+                        <input type="text" placeholder="eg : Lover" id="songName" class="form-control" required>
+                        </div>
+                      </td>
+                    </tr>
+                   
+                    <tr>
+                      <td>Song Duration</td>
+                      <td>
+                        <div class="form-group">
+                        <input type="text" placeholder="eg : 2:30" id="songDuration" class="form-control" required>
+                      </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>PlayList Name</td>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" value="PlayList 1" class="form-control" readonly >
+                        </div>
+                        </td>
+                    </tr>
+
+                    </table>
+                   
+                    <button type="submit" class="btn btn-primary float-to-right" >Add Song to PlayList</button>
+                  </form>
+
+
+              </div>   
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="modal fade" id="addNewPlaylistModal" tabindex="-1" role="dialog" aria-labelledby="addNewPlaylistModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addNewPlaylistModalLabel">Create a new Playlist</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div class="modal-body">
+                <form>
+
+                  <table class="table table-striped">
+                    <tr>
+                      <td>PlayList Name</td>
+                      <td>
+                        <div class="form-group">
+                        <input type="text" placeholder="eg : Golden Hour" id="playListNameForNewPlaylist" class="form-control" required>
+                        </div>
+                      </td>
+                    </tr>
+                   
+                    <tr>
+                      <td>Artist</td>
+                      <td>
+                        <div class="form-group">
+                        <input type="text" placeholder="eg : Kacey Musgraves" id="artistForNewPlaylist" class="form-control" required>
+                      </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Genre</td>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" placeholder="eg: Pop" class="form-control" required id="genreForNewPlaylist" >
+                        </div>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                      <td>Upload Image</td>
+                      <td>
+                        <div class="form-group">
+                          <input type="file" id="imageForNewPlaylist" > 
+                        </div>
+                      </td>
+                    </tr>
+
+                    </table>
+                   
+                    <button type="submit" class="btn btn-primary float-to-right" >Create PlayList</button>
+                  </form>
+
+
+              </div>   
+            </div>
+          </div>
+        </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</html>
